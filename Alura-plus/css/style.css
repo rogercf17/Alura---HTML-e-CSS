@@ -5,6 +5,8 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
+    --roxo-link: purple;
+    --botao-azul-efeito: #3c92fa;
 }
 
 * {
@@ -143,4 +145,25 @@ body {
     color: var(--cinza-secundario);
     margin: 1em 0;
     line-height: 2;
+}
+
+/*Efeitos de click */
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: var(--roxo-link);
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+.botao_secundario:hover {
+    background-color: var(--cinza-secundario);
+    opacity: 0.7;
+    color: var(--cor-de-fundo);
 }
